@@ -48,6 +48,9 @@ def Close_SSH_Connection():
     SSH_client.close()
     print("SSH connection closed.")
 
+def test():
+    pass
+
 
 if __name__ == "__main__":
     hostname = input('please enter IP or Host name: ')  # Hostname or ip address.
