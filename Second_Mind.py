@@ -10,7 +10,7 @@ def Run_App():
     hostname = input('please enter IP or Host name: ')  # Hostname or ip address.
     port = int(input('please enter port: '))  # Port Number for ssh connection.
     username = input('please enter username: ')  # Username for authentication.
-    password = input('please enter password: ')  # Password for password-based authentication (optional).
+    password = input('please enter password: ')  # Password for password-based authentication (optional).....................................................................................
     connection = SSH.SSH_Connection(hostname=hostname, port=port, username=username, password=password)
     time.sleep(3)
     if not connection:  # connection is not valid
@@ -133,6 +133,8 @@ def Run_Command():
             SSH.Command('ip/address/add address=192.168.150.1 interface=HomeCPE-Bridge')
             SSH.Command('ip/dhcp-server/add address-pool=HomeCPE interface=HomeCPE-Bridge disabled=no')
 
+def test():
+    pass
 
 if __name__ == "__main__":
     Run_App()
